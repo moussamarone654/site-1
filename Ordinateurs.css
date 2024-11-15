@@ -1,0 +1,243 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    
+    
+    body {
+        background-color: #f0f0f0; /* Gris clair pour le fond */
+        color: #333; /* Texte sombre pour une meilleure lisibilité */
+    }
+
+    
+
+    /* Header amélioré */
+    header {
+        background-color: #007bff; /* En-tête bleu */
+        color: white; /* Texte blanc */
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #f39c12;
+    }
+    
+    main {
+        padding: 50px 0;
+    }
+
+    .banner {
+        background-image: url('Img/arrierePlan.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    
+    .banner h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .banner p {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Titre section amélioré */
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+    }
+    
+    .product-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    /* Style des produits */
+    .product {
+        width: calc(25% - 20px); /* 4 produits par ligne */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+    
+    .product h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .product p {
+        font-size: 18px;
+        color: #27ae60;
+        margin-bottom: 15px;
+    }
+    
+    .product button {
+        background-color:  #1a73e8c6;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .product button:hover {
+        background-color:  #1a73e8c6;
+    }
+    
+    footer {
+        background-color: #212121;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+    
+    @media (max-width: 768px) {
+        .product {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .product {
+            width: 100%;
+        }
+    }
+
+    section {
+        padding: 40px 0;
+        background-color: #f9f9f9;
+        margin: 20px 0;
+    }
+    
+    .contact-info {
+        margin-top: 20px;
+        text-align: center; /* Centrer le texte */
+    }
+    
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contact-info p {
+        margin: 10px 0;
+    }
+    
+    .contact-info a {
+        color: #1a73e8c6; /* Couleur pour les liens */
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        text-decoration: underline; /* Souligner au survol */
+    }
+
+    .button {
+        background-color: #28a745; /* Vert pour les boutons */
+        color: white; /* Texte blanc */
+    }
+    .button:hover {
+        background-color: #218838; /* Vert foncé au survol */
+    }
+
+    .btn-demande {
+        background-color: #007bff; /* Couleur de fond bleu */
+        color: white; /* Couleur du texte */
+        border: 1px solid transparent; /* Bordure transparente */
+        border-radius: 8px; /* Coins arrondis */
+        padding: 12px 24px; /* Espacement intérieur */
+        font-size: 16px; /* Taille de police */
+        font-weight: 600; /* Poids de la police pour une meilleure lisibilité */
+        text-transform: uppercase; /* Mettre le texte en majuscules */
+        cursor: pointer; /* Curseur de la souris en forme de main */
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transitions douces */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Ombre subtile */
+    }
+    
+    /* Effet au survol */
+    .btn-demande:hover {
+        background-color: #0056d2; /* Couleur plus foncée au survol */
+        border-color: #0056d2; /* Bordure couleur foncée au survol */
+        transform: translateY(-2px); /* Légère élévation */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+    }
+    
+    /* Effet lors du clic */
+    .btn-demande:active {
+        transform: translateY(1px); /* Réduction lors du clic */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Retour à l'ombre d'origine */
+    }
+    
+    /* Effet de focus pour l'accessibilité */
+    .btn-demande:focus {
+        outline: none; /* Supprime le contour par défaut */
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Contour pour l'accessibilité */
+    }
+    
+    
+    
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bannière */
+.banner {
+    background-image: url('Img/arrierePlan.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #ff4b4b;
+}
+
+/* Section Produits en Vedette */
+.featured-products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">MaBoutique</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html">Boutique</a></li>
+                <li><a href="cart.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Grandes Promotions d'Été !</h1>
+        <p>Profitez de réductions jusqu'à -50% sur les produits phares.</p>
+        <a href="shop.html" class="cta-btn">Voir la Boutique</a>
+    </section>
+
+    <section class="featured-products">
+        <h2>Produits en Vedette</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="Img/Itel.png" alt="Itel">
+                <h3>Produit 1</h3>
+                <p>Prix : 50 mil</p>
+                <a href="product.html" class="btn">Voir Plus</a>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="Img/Tecno.jpg" alt="Tecno">
+                    <h3>Produit 2</h3>
+                    <p>Prix : 60 mil</p>
+                    <a href="product.html" class="btn">Voir Plus</a>
+                </div>
+            <div class="product">
+                <img src="/Bureau/Mon Project Commerciale/Mon enriere plan.jpg" alt="Iphone">
+                <h3>Produit 3</h3>
+                <p>Prix : 80 mil</p>
+                <a href="product.html" class="btn">Voir Plus</a>
+            </div>
+            <!-- Ajouter plus de produits ici -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MaBoutique - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
